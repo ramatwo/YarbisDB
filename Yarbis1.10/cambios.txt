@@ -1,0 +1,11 @@
+reestructuracion del codigo y rampings
+
+explicacion del ramping:
+en vez de que arranqeu de 0 a 255 de una, que vaya aumentando exponencialmente la velcoidad
+con esto dejamos que las ruedas arranquen sin derrapar y con mas traccion
+
+ajuste en #define RAMP_STEP 15
+
+en 15, el robot tarda 170ms en llegar a la velocidad maxima
+tambien hace que no haya tanta caida de voltaje. cuando arranca al maximo de una, hay una caida de voltaje.
+con el ramping, evitamos que haya tanta caida.

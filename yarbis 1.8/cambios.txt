@@ -1,0 +1,1 @@
+se le anade un regulador con l1 y l2 para regular la potencia de 100% a 50% y viceversa 
