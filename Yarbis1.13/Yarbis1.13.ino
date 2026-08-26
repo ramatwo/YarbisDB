@@ -193,7 +193,7 @@ void processGamepad(ControllerPtr ctl) {
     if (abs(rawX) < 20) rawX = 0;
     float normX  = constrain(rawX / 512.0f, -1.0f, 1.0f);
     float curved = EXPO_FACTOR * normX * normX * normX + (1.0f - EXPO_FACTOR) * normX;
-    int velX     = (int)(curved * 255.0f); //sentido izq/derecha ya invertido como pediste
+    int velX     = (int)(curved * 255.0f);
 
     //Mejora #3 (existentes): LED refleja el modo de velocidad activo en vez
     //de quedar fijo en rojo siempre.
